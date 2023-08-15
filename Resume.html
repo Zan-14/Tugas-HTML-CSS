@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page || Fauzan Jumdinhar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'bg': '#F2F5F9',
+                'orange': '#FF9C1A',
+                'red': '#EC1B09',
+                'light-red': '#FFEBD1',
+                'light-orange': '#FFE3BF',
+                'light-bg': '#F2F7FC',
+                'soft-bg': '#F8FBFB',
+                'skills-bg': '#E1E8EF',
+                'name': '#0B0909',
+              },
+              fontFamily: {
+                'poppins': ['Poppins, sans-serif'],
+                'raleway': ['Raleway, sans-serif'],
+                'pacifico': ['pacifico, cursive'],
+              },
+            }
+          }
+        }
+      </script>
+      <style>
+        body {
+            background-color: #F2F5F9;
+        }
+      </style>
+</head>
+
+<body>
+    <!-- container -->
+    <div class="relative min-h-screen container mx-[6.944%]">
+        <!-- header -->
+        <header class="mt-[1.75%] mb-[0.75rem]">
+            <div class="py-5">
+                <h1 class="font-pacifico text-[1.5rem] text-orange"><span class="text-red">My</span>Portfolio</h1>
+            </div>
+        </header>
+        <!-- main -->
+        <main class="flex flex-col md:flex-row ">
+            <aside class="mb-5 mr-5 p-5 bg-white font-raleway rounded-xl">
+                <!-- Profile -->
+                <div class="mt-8 text-center">
+                    <img class="h-[12.5em] w-[12.5em] mx-auto rounded-xl object-cover shadow" src="images/FauzanPhoto.png" alt="foto-fauzan">
+                    <h2 class="text-[1.77625rem] font-bold">Fauzan Jumdinhar</h2>
+                    <p class="text-[#0B090980]">Full Stack Developer</p>
+                </div>
+                <!-- social media -->
+                <div class="flex items-center justify-center space-x-2 pb-5 pt-3">
+                    <!-- facebook -->
+                    <a href="https://www.facebook.com/FauzanJumdinhar" class="p-5 bg-light-bg rounded-xl transition-all duration-100 hover:shadow-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 12 21" fill="none">
+                            <path d="M7.75027 12.0825H10.2308L11.2231 8.11357H7.75027V6.12912C7.75027 5.10712 7.75027 4.14467 9.73472 4.14467H11.2231V0.810787C10.8996 0.768121 9.67816 0.671875 8.38827 0.671875C5.69438 0.671875 3.78137 2.31599 3.78137 5.33534V8.11357H0.804688V12.0825H3.78137V20.5164H7.75027V12.0825Z" fill="#1877F2"/>
+                          </svg>
+                    </a>
+                    <!-- linkedin -->
+                    <a href="https://www.linkedin.com/in/fauzan-jumdinhar-marsha/" class="p-5 bg-light-bg rounded-xl transition-all duration-100 hover:shadow-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <path d="M3.88945 1.80688C3.88923 2.24547 3.71479 2.66601 3.40451 2.97599C3.09422 3.28596 2.67351 3.45998 2.23491 3.45976C1.79632 3.45954 1.37578 3.2851 1.06581 2.97482C0.755831 2.66453 0.581812 2.24382 0.582031 1.80523C0.582251 1.36664 0.756691 0.946095 1.06698 0.63612C1.37726 0.326144 1.79798 0.152125 2.23657 0.152344C2.67516 0.152563 3.0957 0.327003 3.40568 0.637289C3.71565 0.947575 3.88967 1.36829 3.88945 1.80688ZM3.93906 4.68434H0.631643V15.0366H3.93906V4.68434ZM9.16479 4.68434H5.8739V15.0366H9.13171V9.60412C9.13171 6.57783 13.0758 6.2967 13.0758 9.60412V15.0366H16.3419V8.4796C16.3419 3.3779 10.5043 3.56808 9.13171 6.07345L9.16479 4.68434Z" fill="#0077B5"/>
+                          </svg>
+                    </a>
+                    <!-- twitter -->
+                    <a href="#" class="p-5 bg-light-bg rounded-xl transition-all duration-100 hover:shadow-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                            <path d="M16.9874 2.60531C16.3564 2.88446 15.6873 3.06783 15.0021 3.14938C15.724 2.71705 16.2642 2.03705 16.5219 1.23604C15.8439 1.63954 15.1005 1.92233 14.3266 2.0753C13.8062 1.51848 13.1164 1.14919 12.3644 1.02485C11.6125 0.900507 10.8405 1.02808 10.1686 1.38773C9.49661 1.74738 8.96229 2.31896 8.64869 3.01361C8.33508 3.70825 8.25976 4.48705 8.43444 5.22892C7.05932 5.16012 5.71406 4.80287 4.48599 4.18036C3.25792 3.55785 2.17451 2.684 1.30612 1.61557C0.998769 2.14347 0.837256 2.74358 0.83812 3.35444C0.83812 4.55338 1.44917 5.61258 2.37607 6.23272C1.82705 6.21541 1.29012 6.06714 0.810007 5.80028V5.84245C0.809982 6.64108 1.0862 7.41515 1.59182 8.03334C2.09744 8.65154 2.80133 9.07582 3.5841 9.23421C3.07447 9.37247 2.54003 9.39283 2.02135 9.29374C2.24206 9.98118 2.67226 10.5824 3.25171 11.0131C3.83115 11.4438 4.53082 11.6825 5.2527 11.6958C4.53528 12.2592 3.71383 12.6757 2.83531 12.9215C1.9568 13.1672 1.03846 13.2373 0.132812 13.1279C1.71353 14.1444 3.5536 14.6841 5.43295 14.6824C11.7948 14.6824 15.2725 9.41281 15.2725 4.84278C15.2725 4.69395 15.2692 4.54346 15.2626 4.39545C15.9393 3.90625 16.5234 3.29951 16.9874 2.60531Z" fill="#1DA1F2"/>
+                          </svg>
+                    </a>
+                    <!-- github -->
+                    <a href="https://github.com/Zan-14" class="p-5 bg-light-bg rounded-xl transition-all duration-100 hover:shadow-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                            <path d="M8.27246 0.326172C3.70408 0.326172 0.00390761 4.02635 0.00390761 8.59472C0.00291203 10.3304 0.548473 12.0224 1.5632 13.4305C2.57793 14.8387 4.01029 15.8916 5.65711 16.4399C6.07054 16.5119 6.22599 16.2638 6.22599 16.0463C6.22599 15.8504 6.21524 15.1996 6.21524 14.5067C4.13818 14.8896 3.60073 14.0007 3.43536 13.5352C3.34192 13.297 2.93924 12.5636 2.58783 12.3668C2.29843 12.2122 1.885 11.8294 2.57708 11.8195C3.22864 11.8087 3.69333 12.4189 3.84878 12.667C4.59295 13.9172 5.78114 13.5658 6.25658 13.3491C6.32935 12.8117 6.54598 12.4503 6.78412 12.2436C4.94437 12.0369 3.02193 11.3233 3.02193 8.16062C3.02193 7.261 3.34192 6.51766 3.86945 5.93804C3.78677 5.73132 3.49737 4.8838 3.95214 3.74687C3.95214 3.74687 4.64422 3.53023 6.22599 4.59522C6.8991 4.4084 7.59457 4.31438 8.29313 4.31575C8.99596 4.31575 9.69878 4.40835 10.3603 4.5944C11.942 3.51949 12.6341 3.7477 12.6341 3.7477C13.0889 4.88462 12.7995 5.73215 12.7168 5.93886C13.2435 6.51766 13.5643 7.25108 13.5643 8.16062C13.5643 11.3341 11.632 12.0369 9.79139 12.2436C10.0915 12.5016 10.3503 12.9977 10.3503 13.7733C10.3503 14.8788 10.3396 15.7677 10.3396 16.0472C10.3396 16.2638 10.495 16.5218 10.9085 16.4391C12.5496 15.8848 13.9757 14.8298 14.9859 13.4227C15.9962 12.0155 16.5398 10.327 16.5402 8.59472C16.5402 4.02635 12.84 0.326172 8.27163 0.326172H8.27246Z" fill="#0B0909"/>
+                          </svg>
+                    </a>
+                </div>
+                <!-- contact -->
+                <div class="p-6 bg-bg rounded-xl shadow">
+                    <div class="flex items-center">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="24" height="24" rx="8.26855" fill="#F2F7FC" />
+                            <path
+                                d="M16 2.5H8C7.46957 2.5 6.96086 2.71071 6.58579 3.08579C6.21071 3.46086 6 3.96957 6 4.5V20.5C6 21.0304 6.21071 21.5391 6.58579 21.9142C6.96086 22.2893 7.46957 22.5 8 22.5H16C16.5304 22.5 17.0391 22.2893 17.4142 21.9142C17.7893 21.5391 18 21.0304 18 20.5V4.5C18 3.96957 17.7893 3.46086 17.4142 3.08579C17.0391 2.71071 16.5304 2.5 16 2.5ZM13 21.5H11V20.5H13V21.5ZM16 19.5H8V5.5H16V19.5Z"
+                                fill="url(#paint0_linear_27_11)" />
+                            <defs>
+                                <lineargradient id="paint0_linear_27_11" x1="12" y1="2.5" x2="12" y2="22.5"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF9A1A" />
+                                    <stop offset="1" stop-color="#EC1C09" />
+                                </lineargradient>
+                            </defs>
+                        </svg>
+                        <div class="ml-5">
+                            <p class="text-gray-500 text-[.875em]">Phone</p>
+                            <p class="font-bold text-[.875em]">+628529396****</p>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <div class="flex items-center">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.969999 5.65L10 0L19.03 5.65C19.61 6 20 6.63 20 7.36V17.36C20 18.46 19.1 19.36 18 19.36H2C0.9 19.36 0 18.46 0 17.36V7.36C0 6.63 0.389999 6 0.969999 5.65ZM2 17.36H18V9.36L10 14.36L2 9.36V17.36ZM10 12.36L18 7.36L10 2.36L2 7.36L10 12.36Z"
+                                fill="#FF9C1B" />
+                        </svg>
+                        <div class="ml-5">
+                            <p class="text-gray-500 text-[.875em]">Email</p>
+                            <p class="font-bold text-[.875em]">fauzanjumdinharm@gmail.com</p>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <div class="flex items-center">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="23.5" height="23.499" rx="8.26855" transform="matrix(-1 0 0 1 24 0)"
+                                fill="#F2F7FC" />
+                            <path
+                                d="M12.25 2C15.9766 2 19 4.87766 19 8.42188C19 12.5 14.5 18.9627 12.8477 21.1948C12.7791 21.2891 12.6892 21.3657 12.5853 21.4186C12.4814 21.4715 12.3665 21.499 12.25 21.499C12.1335 21.499 12.0186 21.4715 11.9147 21.4186C11.8108 21.3657 11.7209 21.2891 11.6523 21.1948C10 18.9636 5.5 12.5033 5.5 8.42188C5.5 4.87766 8.52344 2 12.25 2Z"
+                                stroke="#E80505" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M12.25 11.0154C11.0332 11.0154 10.0469 10.0291 10.0469 8.81241C10.0469 7.59571 11.0332 6.60938 12.25 6.60938C13.4668 6.60938 14.4531 7.59571 14.4531 8.81241C14.4531 10.0291 13.4668 11.0154 12.25 11.0154Z"
+                                stroke="#E80505" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <div class="ml-5">
+                            <p class="text-gray-500 text-[.875em]">Location</p>
+                            <p class="font-bold text-[.875em]">Blora, Indonesia</p>
+                        </div>
+                    </div>
+                    <hr class="my-5">
+                    <a href="https://drive.google.com/uc?id=1mubPlgaYKl4VaZdVIgO4PVYJTQbEpY0j&export=download" download
+                        class="mx-auto w-60 py-3 bg-orange flex items-center justify-center space-x-4 rounded-full mt-5 transition-all duration-100 hover:shadow-xl">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM2 16C1.45 16 0.979002 15.804 0.587002 15.412C0.195002 15.02 -0.000664969 14.5493 1.69779e-06 14V11H2V14H14V11H16V14C16 14.55 15.804 15.021 15.412 15.413C15.02 15.805 14.5493 16.0007 14 16H2Z"
+                                fill="#F2F7FC" />
+                        </svg>
+                        <span class="text-white">Download Resume</span>
+                    </a>
+                </div>
+            </aside>
+            <div class=" block mr-5">
+                <!-- navbar -->
+                <div class="pt-10">
+                    <nav
+                        class="flex mx-auto md:ml-[47%] items-center text-center max-w-md border rounded-xl p-2 space-x-4 justify-center shadow">
+                        <a href="Home.html"
+                            class="flex flex-col items-center py-2 px-4 space-y-2 bg-skills-bg rounded-xl cursor-pointer shadow hover:bg-orange hover:fill-white hover:text-white">
+                            <svg class="" width="21" height="20" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.959 1.6601C12.8259 1.55635 12.662 1.5 12.4932 1.5C12.3245 1.5 12.1606 1.55635 12.0275 1.6601L1.25 10.0639L2.18225 11.2429L3.5 10.2154V19.4996C3.50079 19.8972 3.65908 20.2783 3.94022 20.5594C4.22135 20.8405 4.60242 20.9988 5 20.9996H20C20.3976 20.9988 20.7787 20.8405 21.0598 20.5594C21.3409 20.2783 21.4992 19.8972 21.5 19.4996V10.2221L22.8177 11.2496L23.75 10.0706L12.959 1.6601ZM14 19.4996H11V13.4996H14V19.4996ZM15.5 19.4996V13.4996C15.4996 13.1019 15.3414 12.7206 15.0602 12.4394C14.779 12.1582 14.3977 12 14 11.9996H11C10.6023 12 10.221 12.1582 9.93978 12.4394C9.65856 12.7206 9.5004 13.1019 9.5 13.4996V19.4996H5V9.0461L12.5 3.2036L20 9.0536V19.4996H15.5Z"
+                                    fill="#1A1003" fill-opacity="0.5"/>
+                            </svg>
+                            <span class="text-[.75em]">Home</span>
+                        </a>
+                        <a href="Resume.html"
+                            class="flex flex-col items-center py-2 px-4 space-y-2 rounded-xl cursor-pointer shadow bg-orange">
+                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3.5 0H13.5C14.2956 0 15.0587 0.31607 15.6213 0.87868C16.1839 1.44129 16.5 2.20435 16.5 3V17C16.5 17.7956 16.1839 18.5587 15.6213 19.1213C15.0587 19.6839 14.2956 20 13.5 20H3.5C2.70435 20 1.94129 19.6839 1.37868 19.1213C0.81607 18.5587 0.5 17.7956 0.5 17L0.5 3C0.5 2.20435 0.81607 1.44129 1.37868 0.87868C1.94129 0.31607 2.70435 0 3.5 0ZM3.5 2C3.23478 2 2.98043 2.10536 2.79289 2.29289C2.60536 2.48043 2.5 2.73478 2.5 3V17C2.5 17.2652 2.60536 17.5196 2.79289 17.7071C2.98043 17.8946 3.23478 18 3.5 18H13.5C13.7652 18 14.0196 17.8946 14.2071 17.7071C14.3946 17.5196 14.5 17.2652 14.5 17V3C14.5 2.73478 14.3946 2.48043 14.2071 2.29289C14.0196 2.10536 13.7652 2 13.5 2H3.5ZM5.5 3H11.5C11.7652 3 12.0196 3.10536 12.2071 3.29289C12.3946 3.48043 12.5 3.73478 12.5 4C12.5 4.26522 12.3946 4.51957 12.2071 4.70711C12.0196 4.89464 11.7652 5 11.5 5H5.5C5.23478 5 4.98043 4.89464 4.79289 4.70711C4.60536 4.51957 4.5 4.26522 4.5 4C4.5 3.73478 4.60536 3.48043 4.79289 3.29289C4.98043 3.10536 5.23478 3 5.5 3ZM5.5 15H7.5C7.76522 15 8.01957 15.1054 8.20711 15.2929C8.39464 15.4804 8.5 15.7348 8.5 16C8.5 16.2652 8.39464 16.5196 8.20711 16.7071C8.01957 16.8946 7.76522 17 7.5 17H5.5C5.23478 17 4.98043 16.8946 4.79289 16.7071C4.60536 16.5196 4.5 16.2652 4.5 16C4.5 15.7348 4.60536 15.4804 4.79289 15.2929C4.98043 15.1054 5.23478 15 5.5 15ZM5.5 11H11.5C11.7652 11 12.0196 11.1054 12.2071 11.2929C12.3946 11.4804 12.5 11.7348 12.5 12C12.5 12.2652 12.3946 12.5196 12.2071 12.7071C12.0196 12.8946 11.7652 13 11.5 13H5.5C5.23478 13 4.98043 12.8946 4.79289 12.7071C4.60536 12.5196 4.5 12.2652 4.5 12C4.5 11.7348 4.60536 11.4804 4.79289 11.2929C4.98043 11.1054 5.23478 11 5.5 11ZM5.5 7H11.5C11.7652 7 12.0196 7.10536 12.2071 7.29289C12.3946 7.48043 12.5 7.73478 12.5 8C12.5 8.26522 12.3946 8.51957 12.2071 8.70711C12.0196 8.89464 11.7652 9 11.5 9H5.5C5.23478 9 4.98043 8.89464 4.79289 8.70711C4.60536 8.51957 4.5 8.26522 4.5 8C4.5 7.73478 4.60536 7.48043 4.79289 7.29289C4.98043 7.10536 5.23478 7 5.5 7Z"
+                                    fill="#F2F7FC" />
+                            </svg>
+                            <span class="text-[.75em] text-white">Resume</span>
+                        </a>
+                        <a href="Contact.html"
+                            class="flex flex-col items-center py-2 px-4 space-y-2 bg-skills-bg rounded-xl cursor-pointer shadow hover:bg-orange hover:text-white">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.5 0H4.5C3.96957 0 3.46086 0.210714 3.08579 0.585786C2.71071 0.960859 2.5 1.46957 2.5 2V5H0.5V7H2.5V9H0.5V11H2.5V13H0.5V15H2.5V18C2.5 18.5304 2.71071 19.0391 3.08579 19.4142C3.46086 19.7893 3.96957 20 4.5 20H19.5C19.7652 20 20.0196 19.8946 20.2071 19.7071C20.3946 19.5196 20.5 19.2652 20.5 19V1C20.5 0.734784 20.3946 0.48043 20.2071 0.292893C20.0196 0.105357 19.7652 0 19.5 0ZM11.5 2.999C13.148 2.999 14.5 4.35 14.5 5.999C14.4971 6.79385 14.1801 7.55533 13.6182 8.11747C13.0562 8.67962 12.2948 8.99684 11.5 9C9.853 9 8.5 7.647 8.5 5.999C8.5 4.35 9.853 2.999 11.5 2.999ZM17.5 16H5.5V15.25C5.5 13.031 8.205 10.75 11.5 10.75C14.795 10.75 17.5 13.031 17.5 15.25V16Z"
+                                    fill="#1A1003" fill-opacity="0.5" />
+                            </svg>
+                            <span class="text-[.75em]">Contact</span>
+                        </a>
+                    </nav>
+                </div>
+                <!-- content -->
+                <section class="bg-soft-bg rounded-xl mt-2">
+                    <div class="bg-white rounded-t-xl p-4">
+                        <div class="flex items-center px-10">
+                            <h1 class="text-3xl font-[500] font-poppins mr-8 md:text-[2.5em]">Resume</h1>
+                            <div class="bg-gradient-to-r from-orange via-red to-red rounded-full w-52 h-1 ml-5 lg:w-80"></div>
+                        </div>
+                        <!-- Education & experience -->
+                        <div class="grid grid-cols-1 gap-2 mt-6 lg:grid-cols-2 px-10">
+                            <!-- education -->
+                            <div>
+                                <div class="flex items-center">
+                                    <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.15625 6.68213L13.304 1.82812L25.4517 6.68213L13.304 11.5361L1.15625 6.68213Z" stroke="url(#paint0_linear_157_652)" stroke-width="2.31143" stroke-linejoin="round"/>
+                                        <path d="M25.4492 6.74609V12.0757M6.67578 9.23955V16.4293C6.67578 16.4293 9.45528 19.1643 13.3015 19.1643C17.1483 19.1643 19.9278 16.4293 19.9278 16.4293V9.23955" stroke="url(#paint1_linear_157_652)" stroke-width="2.31143" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <defs>
+                                        <lineargradient id="paint0_linear_157_652" x1="13.304" y1="1.82812" x2="13.304" y2="11.5361" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF9C1B"/>
+                                        <stop offset="1" stop-color="#EC1B09"/>
+                                        </lineargradient>
+                                        <lineargradient id="paint1_linear_157_652" x1="16.0625" y1="6.74609" x2="16.0625" y2="19.1643" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF9C1B"/>
+                                        <stop offset="1" stop-color="#EC1B09"/>
+                                        </lineargradient>
+                                        </defs>
+                                        </svg>
+                                        
+                                    <span class="text-[1.73em] font-poppins font-[500] ml-3">Education</span>
+                                </div>
+                                <div class="space-y-2 bg-[#FFE3BF] my-5 py-5 px-4 rounded-xl">
+                                    <p class="text-[.875em] text-gray-400">2020-2021</p>
+                                    <h2 class="font-bold">Software Development</h2>
+                                    <p class="font-[500]">Moringa School</p>
+                                </div>
+                                <div class="space-y-2 bg-[#FFEED9] my-5 py-5 px-4 rounded-xl">
+                                    <p class="text-[.875em] text-gray-400">2012-2016</p>
+                                    <h2 class="font-bold">Disaster Management</h2>
+                                    <p class="font-[500]">Masinde Muliro University</p>
+                                </div>
+                            </div>
+                            <!-- experience -->
+                            <div>
+                                <div class="flex items-center">
+                                    <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.22833 5.88068V3.56924C6.22833 2.95621 6.47186 2.36829 6.90534 1.93482C7.33881 1.50134 7.92673 1.25781 8.53976 1.25781H13.1626C13.7757 1.25781 14.3636 1.50134 14.7971 1.93482C15.2305 2.36829 15.4741 2.95621 15.4741 3.56924V5.88068M1.60547 12.815L5.24597 13.7245C8.92617 14.6444 12.7762 14.6444 16.4564 13.7245L20.0969 12.815" stroke="url(#paint0_linear_157_647)" stroke-width="2.31143" stroke-linecap="round"/>
+                                        <path d="M1.60547 8.19229C1.60547 7.57926 1.84899 6.99134 2.28247 6.55786C2.71595 6.12438 3.30387 5.88086 3.9169 5.88086H17.7855C18.3985 5.88086 18.9864 6.12438 19.4199 6.55786C19.8534 6.99134 20.0969 7.57926 20.0969 8.19229V17.438C20.0969 18.051 19.8534 18.639 19.4199 19.0724C18.9864 19.5059 18.3985 19.7495 17.7855 19.7495H3.9169C3.30387 19.7495 2.71595 19.5059 2.28247 19.0724C1.84899 18.639 1.60547 18.051 1.60547 17.438V8.19229Z" stroke="url(#paint1_linear_157_647)" stroke-width="2.31143" stroke-linejoin="round"/>
+                                        <path d="M10.8471 11.6571C11.4854 11.6571 12.0028 11.1397 12.0028 10.5014C12.0028 9.86313 11.4854 9.3457 10.8471 9.3457C10.2088 9.3457 9.69141 9.86313 9.69141 10.5014C9.69141 11.1397 10.2088 11.6571 10.8471 11.6571Z" fill="url(#paint2_linear_157_647)"/>
+                                        <defs>
+                                        <lineargradient id="paint0_linear_157_647" x1="10.8512" y1="1.25781" x2="10.8512" y2="14.4144" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF9C1A"/>
+                                        <stop offset="1" stop-color="#E80505"/>
+                                        </lineargradient>
+                                        <lineargradient id="paint1_linear_157_647" x1="10.8512" y1="5.88086" x2="10.8512" y2="19.7495" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF9C1A"/>
+                                        <stop offset="1" stop-color="#E80505"/>
+                                        </lineargradient>
+                                        <lineargradient id="paint2_linear_157_647" x1="10.8471" y1="9.3457" x2="10.8471" y2="11.6571" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FF9C1A"/>
+                                        <stop offset="1" stop-color="#E80505"/>
+                                        </lineargradient>
+                                        </defs>
+                                        </svg>
+                                        
+                                    <span class="text-[1.73em] font-[poppins] font-[500] ml-3">Experience</span>
+                                </div>
+                                <div class="space-y-2 bg-[#FFEED9] my-5 py-5 px-4 rounded-xl">
+                                    <p class="text-[.875em] text-gray-400">2022-Present</p>
+                                    <h2 class="font-bold">Technical Mentor</h2>
+                                    <p class="font-[500]">Moringa School</p>
+                                </div>
+                                <div class="space-y-2 bg-[#FFE3BF] my-5 py-5 px-4 rounded-xl">
+                                    <p class="text-[.875em] text-gray-400">2021-2022</p>
+                                    <h2 class="font-bold">Website Development</h2>
+                                    <p class="font-[500]">Village 2 Nation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- skills -->
+                    <div class="grid grid-cols-2 px-10">
+                        <div class="px-2 py-3">
+                            <h2 class="text-[1.75em] font-poppins font-[500] mb-3">Work Skills</h2>
+                            <div class="flex flex-wrap gap-3 text-[.75em]">
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow mr-4 mb-2 ">NEXT.js</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow mr-4 mb-2 ">React.js</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow mr-4 mb-2 ">HTML 5</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow mr-4 mb-2 ">CSS 3</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow mr-4 mb-2 ">Tailwind CSS</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow mr-4 mb-2 ">Figma</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow mr-4 mb-2 ">JavaScript</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow mr-4 mb-2 ">Mongo DB</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow mr-4 mb-2 ">SQL</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow mr-4 mb-2 ">Angular</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow mr-4 mb-2 ">Android</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow mr-4 mb-2 ">Git</span>
+                            </div>
+                        </div>
+                        <div class="px-2 py-4">
+                            <h2 class="text-[1.75em] font-poppins font-[500] mb-3">Soft Skills</h2>
+                            <div class="flex flex-wrap gap-3 text-[.75em]">
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow ">Time Management</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow ">Mentoring</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow ">Impeccable Communication</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow ">Flexibility</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow ">Research</span>
+                                <span class="p-2 bg-[#E1E8EF] rounded-lg shadow ">Writing</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
